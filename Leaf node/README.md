@@ -9,7 +9,7 @@ Chân OUT (tín hiệu) của PIR module thường là open collector / TTL outp
 Khi không có chuyển động, PIR có thể xuất ra LOW nhưng đôi khi bị “trôi” → đọc sai trên ESP32.
 Vì vậy ta cần dùng pull-down resistor hoặc cấu hình internal pull-down của ESP32 để giữ nó ở mức 0 khi không hoạt động.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-LDR SENSOR ( cảm biến ánh sán)
+LDR SENSOR ( cảm biến ánh sáng)
 ESP32 có ADC 12-bit → giá trị đọc ra nằm trong 0 → 4095.
 adc1_config_width(ADC_WIDTH_BIT_12); (cấu hình độ phân giải 12-bit)
 Khi ánh sáng rất mạnh, điện áp từ LDR đưa vào ADC gần bằng Vref (≈3.3V) → ADC sẽ saturate → trả về 4095.
