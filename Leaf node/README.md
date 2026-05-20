@@ -19,7 +19,7 @@ Công thức đổi giá trị đọc được từ ADC qua giá trị điện �
 Raw ------- 0 -> 4095(2^12)
 Vadc -------- 3.3V -> 5V(Vref)
 
-Vadc= (Raw/2^N-1)*Vref​
+Vadc= (Raw/2^N)*Vref​
 Trong đó:
 Raw = giá trị đọc được từ ADC
 N = số bit độ phân giải ADC (ESP32 12-bit → 4095 max).
